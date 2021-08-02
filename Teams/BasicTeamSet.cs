@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace SportScheduleConsole.Teams
@@ -22,5 +23,11 @@ namespace SportScheduleConsole.Teams
         {
             throw new NotImplementedException();
         }
+
+        //public void Randomize()
+        //{
+        //    Teams = Helpers.Shuffle(Teams).ToList();
+        //    Teams.ForEach(t => t.Opponents = Helpers.Shuffle(t.Opponents).ToList());
+        //}
     }
 }

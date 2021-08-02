@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace SportScheduleConsole
@@ -17,5 +18,10 @@ namespace SportScheduleConsole
         /// <returns>boolean indicating success</returns>
         public bool DoOpponents(int season_length);
         public bool ValidateSet(int season_length);
+        public virtual void Randomize()
+        {
+            Teams = Helpers.Shuffle(Teams).ToList();
+            Teams.ForEach(t => t.Opponents = Helpers.Shuffle(t.Opponents).ToList());
+        }
     }
 }

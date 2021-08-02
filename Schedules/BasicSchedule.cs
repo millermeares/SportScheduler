@@ -36,13 +36,13 @@ namespace SportScheduleConsole
             {
                 return false;
             }
+            TeamSet.Randomize();
             return AssignWeeks();
         }
 
         
         public bool AssignWeeks()
         {
-            //Console.WriteLine(Guid.NewGuid().ToString());
             // could go ahead and implement this. it's pretty easy and mostly unrelated to other stuff. it's just backtracking.
             if(IsComplete())
             {
@@ -52,7 +52,6 @@ namespace SportScheduleConsole
             {
                 if(week.IsComplete(TeamSet.Teams.Count / 2))
                 {
-                    //Console.WriteLine($"complete week: {week.WeekNum}");
                     continue;
                 }
                 foreach(ITeam team in TeamSet.Teams)
@@ -93,11 +92,19 @@ namespace SportScheduleConsole
         //temp goal: it should never get past the week without that week being incomplete. 
         public bool ValidAssignment(IWeek week, ITeam team1, ITeam team2)
         {
-            if(!week.HasTeam(team1) && !week.HasTeam(team2))
+            // if not the first week, check for back to back equivalent games.
+            if(week.WeekNum != 1)
             {
-                return true;
+                if(Weeks[week.WeekNum-2].ContainsEquivalentGame(team1.GetGame(team2)))
+                {
+                    return false;
+                }
             }
-            return false;
+            if(week.HasTeam(team1) || week.HasTeam(team2))
+            {
+                return false;
+            }
+            return true;
         }
 
         public void PrintScheduleToConsole(string teamOwner = null)

@@ -51,7 +51,6 @@ namespace SportScheduleConsole
             DivisionTeam josh = new DivisionTeam("josh", "ASAP FIRK", 3);
             List<DivisionTeam> teams = new List<DivisionTeam>(){ noah, court, stephen, jon, michael, josiah, killen, jackson, miller, harrison,
             christian, josh};
-            //teams = Helpers.Shuffle(teams).ToList();
             DivisionTeamSet team_set = new DivisionTeamSet(teams, 2);
             try
             {

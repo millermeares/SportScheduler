@@ -40,7 +40,6 @@ namespace SportScheduleConsole
         {
             if(Games.Count != expectedGames)
             {
-                //Console.WriteLine($"unexpected game count: {Games.Count}");
                 return false;
             }
             for (int i = 0; i < Games.Count; i++)
@@ -86,8 +85,8 @@ namespace SportScheduleConsole
 
         public virtual void PrintToConsole(string teamOwner = null)
         {
-            //Console.WriteLine($"Week {WeekNum}");
-            foreach(IGame game in Games)
+            Console.WriteLine($"Week {WeekNum}");
+            foreach (IGame game in Games)
             {
                 if(teamOwner == null || game.Participants.Select(o => o.Owner).Contains(teamOwner))
                 {
