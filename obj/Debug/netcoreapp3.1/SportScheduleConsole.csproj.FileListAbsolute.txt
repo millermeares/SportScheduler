@@ -1,0 +1,13 @@
+C:\Users\millermeares\source\repos\SportScheduleConsole\bin\Debug\netcoreapp3.1\SportScheduleConsole.exe
+C:\Users\millermeares\source\repos\SportScheduleConsole\bin\Debug\netcoreapp3.1\SportScheduleConsole.deps.json
+C:\Users\millermeares\source\repos\SportScheduleConsole\bin\Debug\netcoreapp3.1\SportScheduleConsole.runtimeconfig.json
+C:\Users\millermeares\source\repos\SportScheduleConsole\bin\Debug\netcoreapp3.1\SportScheduleConsole.runtimeconfig.dev.json
+C:\Users\millermeares\source\repos\SportScheduleConsole\bin\Debug\netcoreapp3.1\SportScheduleConsole.dll
+C:\Users\millermeares\source\repos\SportScheduleConsole\bin\Debug\netcoreapp3.1\SportScheduleConsole.pdb
+C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\SportScheduleConsole.AssemblyInfoInputs.cache
+C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\SportScheduleConsole.AssemblyInfo.cs
+C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\SportScheduleConsole.csproj.CoreCompileInputs.cache
+C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\SportScheduleConsole.dll
+C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\SportScheduleConsole.pdb
+C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\SportScheduleConsole.genruntimeconfig.cache
+C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\SportScheduleConsole.csprojAssemblyReference.cache
