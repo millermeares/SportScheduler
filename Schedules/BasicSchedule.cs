@@ -89,7 +89,6 @@ namespace SportScheduleConsole
             }
             return false;
         }
-        //temp goal: it should never get past the week without that week being incomplete. 
         public bool ValidAssignment(IWeek week, ITeam team1, ITeam team2)
         {
             // if not the first week, check for back to back equivalent games.
