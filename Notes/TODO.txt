@@ -1,0 +1,50 @@
+﻿to think through: 
+byes?
+how to determine if a schedule is possible.
+doing opponents once a schedule is determined to be viable.
+hmm.
+
+
+future todo: home/away? could probably add this as a constraint maybe? roughly equivalent games. each game would be given a home/away designation. 
+
+
+reasonable constraints: 
+-no back to back equal games (as an option). 
+-games > 0
+-
+
+division constraints:
+-if divisions, there has to be enough games to satisfy division games * (division members -1)
+
+
+structure:
+-add constraint objects to schedule object. 
+-constraints identifiable by string, which is used to create the correct object in a factory class.
+
+
+-what makes a non-viable schedule? if non-viable.... bye weeks? constraint would be "minimize bye weeks". 
+
+-obviously going to be adding constraint satisfaction for the "DoOpponents" part. can't just randomize and go. 
+
+
+could combine the backtracking to include opponents. if non-viable set of opponents, generate next set and test options. 
+
+
+arc consistency. i think teams may be a slightly better way to do this, since they're the entity being constrained, not the weeks. 
+doing weeks is like coloring a map from bottom to top instead of by state. could just do both.. i like that. consistency both ways. 
+
+
+Scheduled Opponents becomes like <IWeek, opponent> or something. that's fine i think
+
+
+
+
+how to know if truly no possible solution?
+trust algorithm i guess.
+
+// when is there not enough 
+
+
+// ok let's refactor to include both. 
+
+// need to make "doOpponents" better. 

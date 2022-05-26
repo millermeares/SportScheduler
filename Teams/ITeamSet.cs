@@ -8,6 +8,7 @@ namespace SportScheduleConsole
     public interface ITeamSet
     {
         public List<ITeam> Teams { get; set; }
+        public string ErrorString { get; set; }
         virtual void AddTeam(ITeam team)
         {
             Teams.Add(team);

@@ -7,7 +7,7 @@ namespace SportScheduleConsole
 {
     public class DivisionTeamSet : ITeamSet
     {
-        
+        public string ErrorString { get; set; }
         public List<ITeam> Teams { get; set;}
         public int DivisionOpponentGames { get; }
         public List<int> DistinctDivisions
@@ -51,7 +51,18 @@ namespace SportScheduleConsole
 
         public bool ValidateSet(int season_length)
         {
-            throw new NotImplementedException();
+            if(season_length <= 0)
+            {
+                // season must be < =
+                ErrorString = "season must have at least one game";
+                return false;
+            }
+            if(DivisionOpponentGames * (TeamsPerDivision - 1) < season_length)
+            {
+                ErrorString = "season must be long enough to fulfill division constraints";
+                return false;
+            }
+            return true;
         }
     }
 }

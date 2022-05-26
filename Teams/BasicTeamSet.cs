@@ -8,6 +8,8 @@ namespace SportScheduleConsole.Teams
     public class BasicTeamSet : ITeamSet
     {
         public List<ITeam> Teams { get; set; }
+        public string ErrorString { get; set; }
+
         public BasicTeamSet(List<ITeam> teams)
         {
             Teams = teams;
@@ -16,18 +18,18 @@ namespace SportScheduleConsole.Teams
         public bool DoOpponents(int season_length)
         {
             // no divisions. 
+            // circle would be fine right? no - too much carry-over.
             throw new NotImplementedException();
         }
 
         public bool ValidateSet(int season_length)
         {
-            throw new NotImplementedException();
+            // get rid of the easy things. like if ... season_length < 0 or whatever
+            if(season_length <= 0)
+            {
+                return false;
+            }
+            return true;
         }
-
-        //public void Randomize()
-        //{
-        //    Teams = Helpers.Shuffle(Teams).ToList();
-        //    Teams.ForEach(t => t.Opponents = Helpers.Shuffle(t.Opponents).ToList());
-        //}
     }
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "avJXKFnKHs/lv8DXNgtASTHA3WafV5TC+jWNwA4Fe0KREShJLtQMg2c1uyaa4j/nGmHGeUuE7iPvFWG+M9v/IA==",
+  "dgSpecHash": "PJ0YqF2zRt6NRHrvE0k8rrBs8hKO8m460llBPRPEOMp/rhqEaLQtxDQu7fDdzPFbGBmPnlJ1fokePzcDWUizeA==",
   "success": true,
   "projectFilePath": "C:\\Users\\millermeares\\source\\repos\\SportScheduleConsole\\SportScheduleConsole.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\millermeares\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+  ],
   "logs": []
 }

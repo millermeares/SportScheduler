@@ -70,7 +70,7 @@ namespace SportScheduleConsole
                         {
                             return true;
                         }
-                        // else - assign works didn't work. undo the assignments.
+                        // else - assign weeks didn't work. undo the assignments.
                         team.ScheduledOpponents.Remove(opponent);
                         opponent.ScheduledOpponents.Remove(team);
                         week.RemoveGame(game);
@@ -94,6 +94,7 @@ namespace SportScheduleConsole
             // if not the first week, check for back to back equivalent games.
             if(week.WeekNum != 1)
             {
+                //weeknum is init to 1 subtract 2
                 if(Weeks[week.WeekNum-2].ContainsEquivalentGame(team1.GetGame(team2)))
                 {
                     return false;
@@ -122,7 +123,6 @@ namespace SportScheduleConsole
             {
                 if(!week.IsComplete(TeamSet.Teams.Count / 2))
                 {
-                    //Console.WriteLine($"incomplete week {week.WeekNum}");
                     return false;
                 }
             }
