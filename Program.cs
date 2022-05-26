@@ -37,18 +37,18 @@ namespace SportScheduleConsole
 
 
             // do it by team. each team's full schedule first. then put those into weeks. then randomize the order and voila. 
-            DivisionTeam noah = new DivisionTeam("noah", "Team nberens", 1);
-            DivisionTeam court = new DivisionTeam("court", "Team cmauzyiv", 1);
-            DivisionTeam stephen = new DivisionTeam("stephen", "Team sAARONdipity", 1);
-            DivisionTeam jon = new DivisionTeam("jon", "Double Tre", 1);
+            DivisionTeam noah = new DivisionTeam("noah", "CJ Meat Hard", 1);
+            DivisionTeam court = new DivisionTeam("court", "7th Floor Crew", 1);
+            DivisionTeam stephen = new DivisionTeam("stephen", "Taylor's Version", 1);
+            DivisionTeam jon = new DivisionTeam("jon", "The Running Back Reaper", 1);
             DivisionTeam michael = new DivisionTeam("michael", "Josh All-In", 2);
-            DivisionTeam josiah = new DivisionTeam("josiah", "Team josiahdayton", 2);
-            DivisionTeam killen = new DivisionTeam("killen", "Chris Herndon IV StringTE", 2);
-            DivisionTeam jackson = new DivisionTeam("jackson", "Taysom Tots", 2);
-            DivisionTeam miller = new DivisionTeam("miller", "Cincinatti Bengals", 3);
+            DivisionTeam josiah = new DivisionTeam("josiah", "NFL Youngbois", 2);
+            DivisionTeam killen = new DivisionTeam("killen", "Let Russ Cook", 2);
+            DivisionTeam jackson = new DivisionTeam("jackson", "Super Lamario", 2);
+            DivisionTeam miller = new DivisionTeam("miller", "Sherlock Mahomes", 3);
             DivisionTeam harrison = new DivisionTeam("harrison", "The Najee Dog Pissers", 3);
-            DivisionTeam christian = new DivisionTeam("christian", "Plz make me an offer", 3);
-            DivisionTeam josh = new DivisionTeam("josh", "ASAP FIRK", 3);
+            DivisionTeam christian = new DivisionTeam("christian", "The Classic 11", 3);
+            DivisionTeam josh = new DivisionTeam("josh", "Watson Tarnation", 3);
             List<DivisionTeam> teams = new List<DivisionTeam>(){ noah, court, stephen, jon, michael, josiah, killen, jackson, miller, harrison,
             christian, josh};
             DivisionTeamSet team_set = new DivisionTeamSet(teams, 2);

@@ -10,4 +10,5 @@ C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\
 C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\SportScheduleConsole.dll
 C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\SportScheduleConsole.pdb
 C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\SportScheduleConsole.genruntimeconfig.cache
-C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\SportScheduleConsole.csprojAssemblyReference.cache
+C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\SportScheduleConsole.csproj.AssemblyReference.cache
+C:\Users\millermeares\source\repos\SportScheduleConsole\obj\Debug\netcoreapp3.1\SportScheduleConsole.GeneratedMSBuildEditorConfig.editorconfig
